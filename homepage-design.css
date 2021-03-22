@@ -1,3 +1,7 @@
+*{
+    margin:0;
+    padding:0;
+}
 #header{
     display: flex;
     flex-direction: row;
@@ -95,7 +99,6 @@
     height: 20px;
     width: 20px;
     cursor: pointer;
-    /* display:none; */
 }
 #clear-button:focus{
     outline: none;
@@ -123,6 +126,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 25px;
 }
 .feeling-lucky-buttons{
     display: flex;
@@ -195,16 +199,36 @@
     justify-content: space-around;
 }
 #left-anchor-group{
-    width:500px;
+    width:400px;
     margin-right: 20px;
 }
 #right-anchor-group{
     width:200px;
     margin-right: 20px;
 }
-@media screen and (max-height: 490px){
-    footer{
-        position:relative;
-        margin-bottom: 0;
+@media screen and (max-height: 475px){
+    
+    #main{
+        margin-bottom: 30px;
+    }
+    #footer{
+        position: relative;
+    }
+}
+@media screen and (max-width: 664px){
+    
+    #search-bar-div{
+        width: 89%;
+    }
+    #text-search-form{
+        width:87%;
+    }
+}
+@media screen and (max-width: 664px){
+    
+    #footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 92px;
     }
 }
