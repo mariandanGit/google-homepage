@@ -1,1 +1,119 @@
 
+#header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 60px;
+    padding:6px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+#header-items-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    width: 222px;
+    padding-right: 20px;
+    align-items: center;
+}
+.header-img-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    height: 40px;
+    width: 40px;
+}
+.header-text-anchors{
+    text-decoration: none;
+    color:rgba(0,0,0,0.87);
+}
+.header-text-anchors:hover{
+    text-decoration: underline;
+}
+.header-img-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.header-img-link:hover{
+    background: rgba(223, 220, 220, 0.7);
+}
+#google-apps-png{
+    height: 24px;
+}
+#profile-picture{
+    height: 32px;
+    border-radius: 50%;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 46px;
+}
+#google-logo-png{
+    width: auto;
+    height: 100px;
+}
+#search-bar-div{
+    display: flex;
+    width:582px;
+    height: 44px;
+    background-color: hotpink;
+    align-items: center;
+    border-radius: 24px;
+}
+#magnifying-glass{
+    height: 17px;
+    width: 17px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+#clear{
+    height: 13px;
+    width: 13px;
+}
+#text-search{
+    width:500px;
+    height: 34px;
+    border:none;
+    margin-right: 10px;
+}
+#text-search:focus{
+    outline: none;
+}
+#languages-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+#languages{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:200px;
+    margin-left: 5px;
+}
+#footer{
+    background-color: brown;
+    height: 46px;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}

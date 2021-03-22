@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 
+    <link rel="stylesheet" href="google_homepage.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +14,62 @@
 <body>
     
     <header id = "header">
-        <div id="header-items">
-           <a href="#">Gmail</a> 
-           <a href="#">Images</a>
-           <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" alt="Google apps png">
-           <img src="" alt="Profile image"> 
+        <div id="header-items-div">
+           
+            <a class = "header-text-anchors" href="#">Gmail</a> 
+            <a class = "header-text-anchors" href="#">Images</a>
+           
+            <div class = "header-img-div">
+               <a class = "header-img-link" href="#">
+                   <img id = "google-apps-png" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" alt="Google apps png">
+                </a>
+            </div>
+           
+            <div class = "header-img-div">
+                <a class = "header-img-link" href="#">
+                    <img id = "profile-picture"src="https://previews.dropbox.com/p/thumb/ABFf0kQf4DRd8r-2rK8rhfMV9M6WOSO0A0zpPHW1KZs2nmSJrQGvT9bg_St2q5k7MKmXmxvAwq-kBW3nnK5gOWqli2RPtEOIItNlLIxMH54AXv1IcAABiMUC4ea_bilrSryqNn4bJ68cVSfl5DEhn87z-qhxxSWQE42VQYndCipvaYrgk46CvxnOGsQX6SdRxUIQEbtxhq3rNKsbd9-bnh-SFaUpjj2LXm_fvOVh9ITYbUUdBNjc39jL2gN20zXuRR5gpEdVWMz6M3vGyth9MW32I8bhKfTY1brcAMJT_mM--ToaoA23XrSshyRenB-HVb3AHN5MMILeKl69BT1m0A1AI2YtDAXu5AIUJidwmEcTqQ/p.jpeg?fv_content=true&size_mode=5" alt="Profile image">
+                </a>
+            </div>
         </div>
     </header>
 
     <main id = main>
+        <img id = "google-logo-png" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo png">
         
+        <div id = "search-bar-div">
+            <img id = "magnifying-glass" src="https://cdn.picpng.com/magnifying_glass/magnifying-glass-search-46648.png" alt="Magnifying glass">
+            <input id = "text-search" type="text">
+            <img id = "clear"src="https://image.flaticon.com/icons/png/512/109/109602.png" alt="Clear x png">
+        </div>
+
+        <div id = "feeling-lucky-div">
+            <a id = "google-search" href="#">Google Search</a>
+            <a id = "feeling-lucky" href="#">I'm Feeling Lucky</a>
+        </div>
+
+        <div id = "languages-div">
+            <p>Google offered in:</p>
+            <div id="languages">
+                <a id = "romana" href="#">Română</a>
+                <a id = "english" href="#">English</a>
+                <a id = "deutsch" href="#">Deutsch</a>
+            </div>
+        </div>
     </main>
 
     <footer id = "footer">
-
+        <div id = left-anchor-group>
+           <a id = "about" href="#">About</a>
+           <a id = "advertising" href="#">Advertising</a>
+           <a id = "business" href="#">Business</a>
+           <a id = "how-it-works" href="#">How Search Works</a>
+        </div>
+        
+        <div id = right-anchor-group>
+            <a id = "privacy" href="#">Privacy</a>
+            <a id = "terms" href="#">Terms</a>
+            <a id = "settings" href="#">Settings</a>
+        </div>
     </footer>
 
 </body>
