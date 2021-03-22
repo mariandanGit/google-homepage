@@ -1,4 +1,3 @@
-
 #header{
     display: flex;
     flex-direction: row;
@@ -6,10 +5,11 @@
     justify-content: flex-end;
     width: 100%;
     height: 60px;
-    padding:6px;
     position: absolute;
     top:0;
     left: 0;
+    font-family: arial,sans-serif;
+    font-size: 13px;
 }
 #header-items-div{
     display: flex;
@@ -47,7 +47,7 @@
     border-radius: 50%;
 }
 .header-img-link:hover{
-    background: rgba(223, 220, 220, 0.7);
+    background: rgb(228, 224, 224, 0.5);
 }
 #google-apps-png{
     height: 24px;
@@ -67,14 +67,17 @@
 #google-logo-png{
     width: auto;
     height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 #search-bar-div{
     display: flex;
     width:582px;
     height: 44px;
-    background-color: hotpink;
     align-items: center;
+    border: 1px solid rgb(228, 224, 224);
     border-radius: 24px;
+    margin-bottom: 20px;
 }
 #magnifying-glass{
     height: 17px;
@@ -82,12 +85,28 @@
     margin-left: 15px;
     margin-right: 10px;
 }
-#clear{
-    height: 13px;
-    width: 13px;
+#clear-button{
+    background-image: url(https://image.flaticon.com/icons/png/512/109/109602.png);
+    background-position: center;
+    background-color: transparent;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    border: none;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    /* display:none; */
+}
+#clear-button:focus{
+    outline: none;
+}
+#text-search-form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 #text-search{
-    width:500px;
+    width:495px;
     height: 34px;
     border:none;
     margin-right: 10px;
@@ -95,12 +114,48 @@
 #text-search:focus{
     outline: none;
 }
+#search-bar-div:hover{
+    box-shadow: 0 0 5px rgba(33,33,33,.2); 
+}
+#feeling-lucky-div{
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.feeling-lucky-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    width:142px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+.feeling-lucky-buttons:hover{
+    box-shadow: 0 0 4px rgba(33,33,33,.4); 
+}
 #languages-div{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 400px;
+    font-family: arial,sans-serif;
+    font-size: 14px;
 }
 #languages{
     display:flex;
@@ -109,11 +164,47 @@
     width:200px;
     margin-left: 5px;
 }
+#languages a{
+    text-decoration: none;
+}
 #footer{
-    background-color: brown;
+    background: rgba(230, 230, 230, 0.54);
+    border-top: 1px solid #dadce0;;
     height: 46px;
     width: 100%;
     position: absolute;
     bottom:0;
     left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+}
+#footer a{
+    text-decoration: none;
+    color: #5c5d5e;
+}
+#footer a:hover{
+    text-decoration: underline;
+}
+#left-anchor-group, #right-anchor-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#left-anchor-group{
+    width:500px;
+    margin-right: 20px;
+}
+#right-anchor-group{
+    width:200px;
+    margin-right: 20px;
+}
+@media screen and (max-height: 490px){
+    footer{
+        position:relative;
+        margin-bottom: 0;
+    }
 }
